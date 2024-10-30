@@ -50,10 +50,6 @@ public class Board {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	@Override
-	public String toString() {
-		return "Board [name=" + name + ", title=" + title + ", age=" + age + ", gender=" + gender + "]";
-	}
 	
 	
 }
