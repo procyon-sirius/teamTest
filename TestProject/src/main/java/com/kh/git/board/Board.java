@@ -4,6 +4,7 @@ public class Board {
 	String name;
 	String title;
 	int age;
+	String gender;
 
 	public Board() {
 		super();
@@ -14,6 +15,15 @@ public class Board {
 		this.name = name;
 		this.title = title;
 		this.age = age;
+	}
+	
+	
+	public Board(String name, String title, int age, String gender) {
+		super();
+		this.name = name;
+		this.title = title;
+		this.age = age;
+		this.gender = gender;
 	}
 	public String getName() {
 		return name;
@@ -33,9 +43,17 @@ public class Board {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
 	@Override
 	public String toString() {
-		return "Board [name=" + name + ", title=" + title + ", age=" + age + "]";
+		return "Board [name=" + name + ", title=" + title + ", age=" + age + ", gender=" + gender + "]";
 	}
+	
 	
 }
